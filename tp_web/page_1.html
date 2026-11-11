@@ -11,6 +11,104 @@
     <h1>Bonjour le web !</h1>
     <p>Voici ma <strong>première</strong> page.</p>
 
+    <a href="https://google.com">google</a> 
+    <img src="OIP.webp" alt="Une image" width="300">
+    <ul>                       <!-- liste à puces -->   
+        <li>HTML</li>   
+        <li>CSS</li> 
+    </ul> 
+    <ol>                       <!-- liste numérotée -->   
+        <li>Écrire</li>   
+        <li>Tester</li> 
+    </ol> 
+    <table>   
+        <caption>Emploi du temps</caption>   
+        <thead>     
+            <tr>
+                <th>Jour</th>
+                <th>Cours</th>
+            </tr>   
+        </thead>   
+        <tbody>     
+            <tr>
+                <td>Lundi</td>
+                <td>Web</td>
+            </tr>     
+            <tr>
+                <td>Mardi</td>
+                <td>Algorithmique</td>
+            </tr>   
+        </tbody> 
+    </table> 
+    <table border="1">   
+        <caption>Listes etudiants</caption>   
+        <thead>     
+            <tr>
+                <th>Filiere</th>
+ 
+                <th>Nombres</th>
+
+            </tr>   
+        </thead>   
+        <tbody>     
+            <tr>
+                <td>IG</td>
+
+                <td>30</td>
+            </tr>     
+            <tr>
+                <td>SIL</td>
+
+                <td>20</td>
+            </tr>
+            <tr>
+                <td>MRH</td>
+
+                <td>30</td>
+            </tr>
+            <tr>
+                <td>MAC</td>
+  
+                <td>40</td>
+            </tr>
+        </tbody>
+    </table>*/
+    <form action="/inscription" method="post">   
+        <label for="nom">Nom</label>   
+        <input type="text" id="nom" name="nom" required>     
+        <label for="email">E-mail</label>   
+        <input type="email" id="email" name="email" required>     
+        <label for="age">Âge</label>   
+        <input type="number" id="age" name="age" min="15" max="99">     
+        <fieldset>     
+            <legend>Niveau</legend>     
+            <label><input type="radio" name="niveau" value="debutant" checked> Débutant</label>     
+            <label><input type="radio" name="niveau" value="confirme"> Confirmé</label>   
+        </fieldset>     
+        <label for="pays">Pays</label>
+        <form action="/inscription" method="post">   
+            <label for="nom">Nom</label>   
+            <input type="text" id="nom" name="nom" required>     
+            <label for="email">E-mail</label>   
+            <input type="email" id="email" name="email" required>     
+            <label for="age">Âge</label>   
+            <input type="number" id="age" name="age" min="15" max="99">     
+            <fieldset>     
+                <legend>Niveau</legend>     
+                <label><input type="radio" name="niveau" value="debutant" checked> Débutant</label>     
+                <label><input type="radio" name="niveau" value="confirme"> Confirmé</label>   
+            </fieldset>     
+            <label for="pays">Pays</label> 
+            <select id="pays" name="pays"> 
+                <option value="fr">France</option> 
+                <option value="sn">Sénégal</option> 
+            </select> 
+            <label for="msg">Message</label> 
+            <textarea id="msg" name="msg" rows="4"></textarea> 
+            <label class="bouton"><input type="checkbox" name="cgu" required> J'accepte les conditions</label> 
+            <button type="submit">Envoyer</button> 
+        </form> 
+
 <script src="script.js"></script>
 </body>
 

@@ -1,0 +1,12 @@
+/*style.css*/
+h1 {
+    color: #1f6f4a; 
+    font-size: 2rem; 
+    text-align: center;
+}
+.bouton {   
+    background: #1f6f4a;   
+    color: white;   
+    padding: 0.6rem 1.2rem;   
+    border-radius: 6px; 
+}
