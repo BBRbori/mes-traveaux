@@ -1,4 +1,3 @@
-
 * {
     margin: 0;
     padding: 0;
@@ -13,7 +12,6 @@ body {
     align-items: center;
 }
 
-/* Corps du téléphone */
 .telephone {
     width: 360px;
     height: 720px;
@@ -24,7 +22,6 @@ body {
     box-shadow: 0 8px 20px #999;
 }
 
-/* Ecran */
 .ecran {
     height: 345px;
     background-color: white;
@@ -42,7 +39,6 @@ body {
     object-fit: contain;
 }
 
-/* Clavier */
 .clavier {
     height: 300px;
     background-color: white;
@@ -51,7 +47,6 @@ body {
     overflow: hidden;
 }
 
-/* Boutons du haut */
 .boutons {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -92,7 +87,6 @@ body {
     transform: none;
 }
 
-/* Grille des chiffres */
 .chiffres {
     display: grid;
     grid-template-columns: repeat(3, 1fr);

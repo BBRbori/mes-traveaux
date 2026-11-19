@@ -1,0 +1,189 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: white;
+        }
+
+        header {
+            height: 60px;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            padding: 0 25px;
+            gap: 20px;
+        }
+
+        header a {
+            color: #333;
+            text-decoration: none;
+            font-size: 13px;
+        }
+
+        .apps {
+            font-size: 22px;
+        }
+
+        .profil {
+            width: 35px;
+            height: 35px;
+            background: #333;
+            border-radius: 50%;
+        }
+
+        main {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-top: 150px;
+        }
+
+        .logo {
+            font-size: 75px;
+            font-weight: bold;
+            margin-bottom: 25px;
+            letter-spacing: -4px;
+        }
+
+        .bleu { color: #4285F4; }
+        .rouge { color: #EA4335; }
+        .jaune { color: #FBBC05; }
+        .vert { color: #34A853; }
+
+        .recherche {
+            width: 530px;
+            height: 45px;
+            border: 1px solid #ddd;
+            border-radius: 25px;
+            display: flex;
+            align-items: center;
+            padding: 0 15px;
+        }
+
+        .recherche input {
+            flex: 1;
+            border: none;
+            outline: none;
+            font-size: 16px;
+        }
+
+        .micro {
+            font-size: 18px;
+        }
+
+        .boutons {
+            display: flex;
+            gap: 12px;
+            margin-top: 28px;
+        }
+
+        .boutons button {
+            background: #f8f9fa;
+            border: 1px solid #f8f9fa;
+            padding: 10px 18px;
+            font-size: 14px;
+            cursor: pointer;
+            border-radius: 3px;
+        }
+
+        .boutons button:hover {
+            border: 1px solid #ccc;
+        }
+
+        footer {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            background: #f2f2f2;
+            color: #666;
+            font-size: 14px;
+        }
+
+        .pays {
+            padding: 15px 28px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .liens {
+            display: flex;
+            justify-content: space-between;
+            padding: 15px 28px;
+        }
+
+        .liens div {
+            display: flex;
+            gap: 25px;
+        }
+
+        footer a {
+            color: #666;
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <a href="#">Gmail</a>
+        <a href="#">Images</a>
+        <span class="apps">⠿</span>
+        <div class="profil"></div>
+    </header>
+
+    <main>
+
+        <div class="logo">
+            <span class="bleu">G</span><span class="rouge">o</span><span class="jaune">o</span><span class="bleu">g</span><span class="vert">l</span><span class="rouge">e</span>
+        </div>
+
+        <div class="recherche">
+            <input type="text">
+            <span class="micro">🎙️</span>
+        </div>
+
+        <div class="boutons">
+            <button>Recherche Google</button>
+            <button>J'ai de la chance</button>
+        </div>
+
+    </main>
+
+    <footer>
+
+        <div class="pays">
+            France
+        </div>
+
+        <div class="liens">
+            <div>
+                <a href="#">Publicité</a>
+                <a href="#">Entreprise</a>
+                <a href="#">À propos</a>
+            </div>
+
+            <div>
+                <a href="#">Info consommateurs</a>
+                <a href="#">Confidentialité</a>
+                <a href="#">Conditions</a>
+                <a href="#">Paramètres</a>
+            </div>
+        </div>
+
+    </footer>
+
+</body>
+</html>
