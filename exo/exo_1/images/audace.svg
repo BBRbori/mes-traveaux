@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<g fill="none" stroke="#202020" stroke-width="5" stroke-linecap="round" stroke-linejoin="round">
+<path d="M18 88 L82 88"/><path d="M35 84 L42 61 L52 50"/><circle cx="55" cy="39" r="8" fill="#202020" stroke="none"/>
+<path d="M51 49 L43 63 L57 70 L66 58"/><path d="M57 70 L54 86 M43 63 L31 78"/>
+<path d="M72 10 V52"/><path d="M72 10 L91 17 L72 24" fill="#202020"/>
+</g></svg>

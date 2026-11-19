@@ -1,0 +1,153 @@
+
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* PAGE */
+body {
+    background: #eeeeee;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    padding: 30px 10px;
+}
+
+/* AFFICHE */
+.affiche {
+    width: 450px;
+    background: white;
+    padding: 20px 25px;
+    border: 2px solid #dddddd;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* ENTETE */
+.entete {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.entete p {
+    font-family: Georgia, serif;
+    font-size: 17px;
+    margin-bottom: 5px;
+}
+
+.logo {
+    width: 100px;
+    height: auto;
+    display: block;
+    margin: auto;
+}
+
+/* GRILLE */
+.cartes {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 195px);
+    gap: 8px;
+}
+
+/* CARTES */
+.carte {
+    position: relative;
+    height: 195px;
+    padding: 13px 9px;
+    overflow: hidden;
+}
+
+/* TITRES */
+.carte h2 {
+    font-size: 11px;
+    line-height: 1.4;
+    margin-bottom: 18px;
+    font-weight: bold;
+}
+
+/* TEXTES */
+.carte p {
+    font-size: 10px;
+    line-height: 1.5;
+}
+
+/* COULEURS */
+.jaune {
+    background: #e8d500;
+    color: #222;
+}
+
+.rose {
+    background: #e91e73;
+    color: white;
+}
+
+.noire {
+    background: #292929;
+    color: white;
+}
+
+.bleue {
+    background: #1689c5;
+    color: white;
+}
+
+.grise {
+    background: #737d7a;
+    color: white;
+}
+
+.orange {
+    background: #c77b30;
+    color: white;
+}
+
+/* ILLUSTRATIONS */
+.illustration {
+    position: absolute;
+    width: 65px;
+    height: 65px;
+    right: 3px;
+    bottom: 3px;
+    object-fit: contain;
+    display: block;
+    border: none;
+}
+
+/* RESPONSIVE */
+@media (max-width: 480px) {
+
+    .affiche {
+        width: 100%;
+        padding: 15px;
+    }
+
+    .cartes {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 170px);
+        gap: 6px;
+    }
+
+    .carte {
+        height: 170px;
+        padding: 8px 5px;
+    }
+
+    .carte h2 {
+        font-size: 9px;
+    }
+
+    .carte p {
+        font-size: 8px;
+    }
+
+    .illustration {
+        width: 48px;
+        height: 48px;
+    }
+}
+.jaune .illustration {
+    filter: brightness(0) invert(1);
+}

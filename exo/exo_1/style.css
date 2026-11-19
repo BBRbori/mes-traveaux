@@ -1,0 +1,106 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #eeeeee;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    padding: 30px 10px;
+}
+
+.affiche {
+    background-color: white;
+    width: 450px;
+    min-height: 750px;
+    padding: 25px 30px;
+    border: 2px solid #dddddd;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* LOGO */
+
+header {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.logo {
+    width: 100px;
+    height: auto;
+    object-fit: contain;
+}
+
+/* TITRE */
+
+h2 {
+    background-color: #f4df38;
+    font-size: 16px;
+    padding: 7px;
+    margin-bottom: 18px;
+    line-height: 1.4;
+}
+
+/* INTRODUCTION */
+
+.introduction {
+    font-size: 14px;
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+
+/* REGLES */
+
+.regle {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    margin-bottom: 17px;
+    font-size: 13px;
+    line-height: 1.4;
+}
+
+.numero {
+    background-color: #e72b78;
+    color: white;
+    font-weight: bold;
+    min-width: 20px;
+    height: 21px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 3px;
+}
+
+.regle p {
+    margin-bottom: 6px;
+}
+
+.regle small {
+    font-size: 11px;
+    color: #333333;
+}
+
+/* PIED DE PAGE */
+
+footer {
+    text-align: center;
+    color: #e72b78;
+    font-weight: bold;
+    font-size: 15px;
+    margin-top: 25px;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 480px) {
+    .affiche {
+        width: 100%;
+        padding: 20px;
+    }
+}

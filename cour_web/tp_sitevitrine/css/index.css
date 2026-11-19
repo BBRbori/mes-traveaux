@@ -1,0 +1,89 @@
+body{
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+.entete{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 5%;
+    background: #1f4e79;
+    color: white;
+}
+.logo{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.menu{
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+.menu a{
+    text-decoration: none;
+    color: white;
+}
+.menu a:hover{
+    color: #ffcc00;
+}
+.hero{
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../image/images.jpeg') center/cover, blue;
+}
+.hero h1{
+    font-size: 2.5rem;
+}
+#services{
+    padding: 50px 5%;
+}
+#services h2{
+    text-align: center;
+    margin-bottom: 30px;
+}
+.grille-services{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+.cartes{
+    padding: 25px;
+    text-align: center;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform .3s;
+}
+.cartes:hover{
+    transform: scale(1.05);
+}
+.cartes span{
+    font-size: 2rem;
+}
+.pied{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 30px 5%;
+    background: #222;
+    color: white;
+}
+.bouton{
+    margin-top: 20px;
+    padding: 12px 30px;
+    background: yellow;
+    color: black;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: transform .3s, background .3s;
+}
+.bouton:hover{
+    transform: scale(1.1);
+    background: #ffcc00;
+}

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+        .ballon {
+            width: 200px;
+            height: 200px;
+            background-color: black;
+            border-radius: 50%;
+            position: absolute;
+            top: 50vh;
+            left: calc(50vw - 100px);
+            animation: rebonding;
+            animation-timing-function: ease-in;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+        }
+        @keyframes rebonding {
+            0% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(100px);
+            }
+            100% {
+                transform: translateY(200px);
+            }
+        }
+
+        .carre {
+            width: 200px;
+            height: 200px;
+            background-color: red;
+            position: absolute;
+            animation: rouler;
+            animation-timing-function: ease-in;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+        }
+        @keyframes rouler {
+            0% {
+                transform: translateX(0);
+            }
+            25% {
+                transform: translateX(25vw);
+            }
+            50% {
+                transform: translateX(50vw);
+            }
+            75% {
+                transform: translateX(75vw);
+            }
+            100% {
+                transform: translateX(100vw);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="carre"></div>
+    <div class="ballon"></div>
+</body>
+</html>

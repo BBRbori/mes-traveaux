@@ -1,0 +1,120 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #d9f2fa;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Corps du téléphone */
+.telephone {
+    width: 360px;
+    height: 720px;
+    background-color: #009edb;
+    border: 7px solid #222;
+    border-radius: 55px;
+    padding: 18px;
+    box-shadow: 0 8px 20px #999;
+}
+
+/* Ecran */
+.ecran {
+    height: 345px;
+    background-color: white;
+    border: 7px solid #222;
+    border-radius: 42px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 18px;
+}
+
+.ecran img {
+    width: 80%;
+    height: auto;
+    object-fit: contain;
+}
+
+/* Clavier */
+.clavier {
+    height: 300px;
+    background-color: white;
+    border: 6px solid #222;
+    border-radius: 38px;
+    overflow: hidden;
+}
+
+/* Boutons du haut */
+.boutons {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    height: 58px;
+    border-bottom: 5px solid #222;
+}
+
+.boutons div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-right: 5px solid #222;
+}
+
+.appel {
+    background-color: #a8efd0;
+    color: #269c82;
+    font-size: 25px;
+}
+
+.central {
+    background-color: white;
+}
+
+.central::after {
+    content: "";
+    width: 43px;
+    height: 43px;
+    background-color: #ec008c;
+    border-radius: 50%;
+}
+
+.raccrocher {
+    background-color: #ffd0d0;
+    color: #c75c67;
+    font-size: 25px;
+    border-right: none !important;
+    transform: none;
+}
+
+/* Grille des chiffres */
+.chiffres {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    height: calc(100% - 58px);
+}
+
+.chiffres div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 21px;
+    color: #111;
+    background-color: white;
+    border-right: 5px solid #222;
+    border-bottom: 5px solid #222;
+}
+
+.chiffres div:nth-child(3n) {
+    border-right: none;
+}
+
+.chiffres div:nth-child(n+10) {
+    border-bottom: none;
+}
